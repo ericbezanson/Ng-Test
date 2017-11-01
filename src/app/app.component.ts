@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular Demo';
   imageURL = 'http://cdn1us.denofgeek.com/sites/denofgeekus/files/2016/07/hunt-the-truth.jpg';
-  colSpan = 2;
+  post = {
+    title: "Title",
+    liked: true
+  };
 }

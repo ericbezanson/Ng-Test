@@ -1,5 +1,5 @@
 <h1> {{ title }}</h1>
-<like></like>
+<like [liked]="post.liked" (change)="onLikeChange()" ></like>
 <courses></courses>
 <img [src]="imageURL" />
 <table>

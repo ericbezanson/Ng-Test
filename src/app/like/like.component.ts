@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'like',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class LikeComponent implements OnInit {
   star = 'glyphicon-star';
   emptyStar = 'glyphicon-star-empty';
-  liked: boolean;
+  @Input() liked: boolean;
   status = this.emptyStar;
 
   onClick() {
