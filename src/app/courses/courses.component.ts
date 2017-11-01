@@ -2,15 +2,13 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'courses',
-  template: `
-    <input [value]="email" (keyup.enter)="email = $event.target.value; onKeyUp()" />
-
-  `
+  templateUrl: './courses.component.html',
+  styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent implements OnInit {
-  email = "me@example.com";
+  text = '';
   onKeyUp() {
-    console.log(this.email);
+    console.log(this.text);
   }
 
 

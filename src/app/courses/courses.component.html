@@ -1,3 +1,2 @@
-<p>
-  courses works!
-</p>
+<input [value]="text" (keyup)="text = $event.target.value; onKeyUp()" />
+<h3>{{ text | titleCase }}</h3>

@@ -1,0 +1,7 @@
+<button type="button" (click)="onClick()" class="btn btn-default btn-lg">
+  <span
+    class="glyphicon" 
+    [class.glyphicon-star]="liked"
+    [class.glyphicon-star-empty]="!liked"
+  ></span> Star
+</button>
